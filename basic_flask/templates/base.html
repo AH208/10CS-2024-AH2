@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% block head %}
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/static/style.css">
     <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% block head %}
     {% endblock %}
   </head>
   <body>
     <div id="content">{% block content %}{% endblock %}</div>
-    <div id="footer">
+    <div id="footer" class="w3-center w3-round w3-display-bottommiddle">
       {% block footer %}
-      &copy; Copyright 2010 by <a href="http://domain.invalid/">you</a>.
+      &copy; Copyright 2024 by <a href="https://alex.horvath.id.au/">Alex Horvath</a>.
       {% endblock %}
-    </div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </div>
   </body>
 </html>

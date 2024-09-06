@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+<div class="w3-container w3-round-xxlarge w3-deep-purple w3-display-middle">
+    <div class="w3-center">
+        <h1>Login</h1>
+    <form action="/login" method="post">
+        Username:
+        <input type="text" name="username" required>
+        </div>
+        <div class="w3-margin-bottom">Password:
+        <input type="password" name="password" required>
+        </div>
+        <input class="w3-button w3-white w3-border w3-border-red w3-round-large" type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="/">Register</a></p>
+</div>
+{% endblock %}

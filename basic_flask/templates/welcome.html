@@ -1,12 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
-</head>
-<body>
-<h1>Welcome to my Flask App</h1>
-<strong>Hello, World!</strong>
 
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+{% endblock %}
+{% block content %}
+<!--h1>Welcome to my Flask App</h1 -->
+
+<h1> Welcome {{ user }}, you are {{ age }} years old.</h1>
+
+
+<div class="w3-container w3-deep-purple w3-round-xxlarge">
+    <img class="w3-circle" src="../static/f1.png" alt=user style="width:80%;max-width:150px">
+    <p>Name: {{ user }} </p>
+    <p>Age: {{ age }}</p>
+</div>
+
+<div class="w3-dropdown-hover w3-display-right">
+    <button class="w3-button">Page Selection</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border-gray w3-deep-purple">
+        <a href="/calculator" class="w3-bar-item w3-button">Calculator</a>
+        <a href="/calculatorEX" class="w3-bar-item w3-button">Weather</a>
+    </div>
+</div>
+
+<div class="w3-container">
+    <p>Text</p>
+</div>
+
+<a href="logout" class="w3-button w3-deep-purple w3-border w3-border-blue-gray w3-round-large">Logout</a>
+
+{% endblock %}
+
