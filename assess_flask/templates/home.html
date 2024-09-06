@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<html>
+    <h1>Welcome to the AI App</h1>
+    <a href="{{ url_for('login') }}">Login</a> or <a href="{{ url_for('register') }}">Register</a>
+</html>
+
+
+{% endblock %}

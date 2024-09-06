@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer" class="w3-center w3-round w3-display-bottommiddle">
+      {% block footer %}
+      &copy; Contact: <a href="https://www.google.com">Website Owner</a>.
+      {% endblock %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </div>
+  </body>
 </html>
