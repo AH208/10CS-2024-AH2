@@ -4,33 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="475d7e41-6345-4c94-b699-c611f225f90f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assess_flask/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assess_flask/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/10CS-2024-AH.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/10CS-2024-AH.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="475d7e41-6345-4c94-b699-c611f225f90f" name="Changes" comment="10CS-2024-AH">
+      <change afterPath="$PROJECT_DIR$/Other/main_ozone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Other/science_ozone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assess_flask/templates/ai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/age_calculatorAH.py" beforeDir="false" afterPath="$PROJECT_DIR$/age_calculatorAH.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assess_flask/ai_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/ai_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assess_flask/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assess_flask/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/templates/calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/templates/child_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/templates/child_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/templates/llamaai.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/templates/llamaai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_flask/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/templates/welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro_course/helloworld.py" beforeDir="false" afterPath="$PROJECT_DIR$/intro_course/helloworld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/list_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list_learning01.py" beforeDir="false" afterPath="$PROJECT_DIR$/list_learning01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list_learning02.py" beforeDir="false" afterPath="$PROJECT_DIR$/list_learning02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybasics01.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybasics01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_python_quiz-01 - AlexHcopy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/student_python_quiz-01 - AlexHcopy.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_python_quiz-01.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="SQL File" />
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -298,12 +280,47 @@
       <workItem from="1725325679210" duration="5811000" />
       <workItem from="1725331588815" duration="318000" />
       <workItem from="1725420809765" duration="2037000" />
-      <workItem from="1725585094420" duration="2506000" />
+      <workItem from="1725585094420" duration="3609000" />
+      <workItem from="1725922895813" duration="4842000" />
+      <workItem from="1726012351011" duration="272000" />
+      <workItem from="1726192938552" duration="2573000" />
     </task>
+    <task id="LOCAL-00001" summary="10CS-2024-AH">
+      <option name="closed" value="true" />
+      <created>1725587807902</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725587807902</updated>
+    </task>
+    <task id="LOCAL-00002" summary="10CS-2024-AH">
+      <option name="closed" value="true" />
+      <created>1725588175468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725588175468</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="10CS-2024-AH" />
+    <option name="LAST_COMMIT_MESSAGE" value="10CS-2024-AH" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -332,12 +349,12 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/10CS_2024_AH$app.coverage" NAME="app Coverage Results" MODIFIED="1725331485060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_flask" />
+    <SUITE FILE_PATH="coverage/10CS_2024_AH$app.coverage" NAME="app Coverage Results" MODIFIED="1725925836290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_flask" />
     <SUITE FILE_PATH="coverage/10CS_2024_AH$ai_app.coverage" NAME="ai_app Coverage Results" MODIFIED="1724213526792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basic_flask" />
     <SUITE FILE_PATH="coverage/10CS_2024_AH$pybasics01.coverage" NAME="pybasics01 Coverage Results" MODIFIED="1720747993058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/10CS_2024_AH$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1720493165164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/intro_course" />
     <SUITE FILE_PATH="coverage/10CS_2024_AH$age_calculatorAH.coverage" NAME="age_calculatorAH Coverage Results" MODIFIED="1721089981515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/10CS_2024_AH$list_learning.coverage" NAME="list_learning Coverage Results" MODIFIED="1721356668012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/10CS_2024_AH$ai_app__1_.coverage" NAME="ai_app (1) Coverage Results" MODIFIED="1725587391755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assess_flask" />
+    <SUITE FILE_PATH="coverage/10CS_2024_AH$ai_app__1_.coverage" NAME="ai_app (1) Coverage Results" MODIFIED="1726194682203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assess_flask" />
   </component>
 </project>

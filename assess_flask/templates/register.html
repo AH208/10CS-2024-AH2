@@ -1,7 +1,24 @@
 {% extends "base.html" %}
-{% block title %}Index{% endblock %}
-{% block head %}
-{% endblock %}
-
+{% block title %}Register{% endblock %}
 {% block content %}
+
+<div class="w3-container w3-round-xxlarge w3-deep-purple w3-display-middle">
+    <div class="w3-center">
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+</div>
+
 {% endblock %}
