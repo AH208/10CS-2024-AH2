@@ -14,7 +14,7 @@ def get_db_connection():
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('register.html')
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -51,21 +51,20 @@ def login_post():
         session['user'] = user[1]
         print(user)
         session['age'] = user[3]
-        return redirect(url_for('welcome'))
+        return redirect(url_for('account'))
     return 'login Failed'
-
-
-@app.route('/hello_world')
-def hello_world():
-    return 'Hello, World!'
 
 
 @app.route('/welcome')
 def welcome():
+    return render_template('welcome.html')
+
+@app.route('/account')
+def account():
     if 'user' in session:
         user = session['user']
         age = session['age']
-        return render_template('welcome.html', user=user, age=age)
+        return render_template('account.html', user=user, age=age)
     return redirect(url_for('login'))
 
 
