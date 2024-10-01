@@ -52,8 +52,11 @@ def login_post():
         print(user)
         session['age'] = user[3]
         return redirect(url_for('account'))
-    return 'login Failed'
+    return redirect(url_for('login_fail'))
 
+@app.route('/login_fail')
+def login_fail():
+    return render_template('login_fail.html')
 
 @app.route('/welcome')
 def welcome():
@@ -74,13 +77,6 @@ def logout():
     session.pop('user', None)
     session.pop('age', None)
     return redirect(url_for('login'))
-
-#   ai
-#   def query_llama(api_key, prompt):
-#       headers = {'Authorization': f'Bearer {LA-2e8ca93be82a4097afeff3ee5683ba2a92d26c6699434bd9878a6c988a60a1ad}'}
-#       data = {'prompt': prompt, 'max_tokens': 150}
-#       response = requests.post('https://api.llama3.com/v1/completions', headers=headers, json=data)
-#       return response.json()
 
 
 if __name__ == '__main__':

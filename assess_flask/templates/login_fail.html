@@ -1,0 +1,17 @@
+{% extends "simple_base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<html>
+    <div class="w3-panel w3-red w3-display-container">
+  <h3>Login has failed!</h3>
+  <p>Please try to log-in again or create an account</p>
+</div>
+    <div class="w3-center">
+     <a href="{{ url_for('login') }}">Login</a> or <a href="{{ url_for('register') }}">Register</a>
+    </div>
+</html>
+
+{% endblock %}
