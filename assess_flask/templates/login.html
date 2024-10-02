@@ -1,12 +1,16 @@
 {% extends "simple_base.html" %}
 {% block title %}Index{% endblock %}
 {% block content %}
-<div class="w3-container w3-round-xxlarge w3-deep-purple w3-display-middle">
+<div class="w3-container w3-round-xxlarge w3-deep-purple w3-border w3-border-deep-orange w3-display-middle">
     <div class="w3-center">
         <h1>Login</h1>
     <form action="/login" method="post">
-        username:
+        Username:
         <input type="text" name="username" required>
+        <br>
+        Account Pin:
+        <input type="number" name="pin" required>
+        <br>
         <div class="w3-margin-bottom">Password:
         <input type="password" name="password" required>
         </div>

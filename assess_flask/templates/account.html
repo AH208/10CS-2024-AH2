@@ -4,8 +4,18 @@
 {% endblock %}
 
 {% block content %}
-<html>
-    <h1>Welcome to your very own AI App Account!</h1>
-</html>
+
+    <h1>Hello {{ user }}! Welcome to your very own AI App Account!</h1>
+
+
+<div class="w3-dropdown-hover w3-display-right">
+    <button class="w3-button">Page Selection</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border-gray w3-deep-purple">
+        <a href="/geminiai" class="w3-bar-item w3-button">Gemini AI</a>
+        <a href="/settings" class="w3-bar-item w3-button">Settings</a>
+    </div>
+</div>
+
+
 
 {% endblock %}

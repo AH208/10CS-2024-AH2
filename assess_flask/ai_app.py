@@ -21,11 +21,11 @@ def home():
 def register():
     username = request.form['username']
     password = request.form['password']
-    age = request.form['age']
+    pin = request.form['pin']
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
     # inserts the user details in the users table
-    cursor.execute('INSERT INTO users (username, password, age) VALUES (?, ?, ?)', (username, password, age))
+    cursor.execute('INSERT INTO users (username, password, pin) VALUES (?, ?, ?)', (username, password, pin))
     conn.commit()  # commits the changes to the database
     conn.close()  # closes the connection to the database
     flash('User registered successfully!', 'success!')
@@ -41,16 +41,16 @@ def login():
 def login_post():
     username = request.form['username']
     password = request.form['password']
+    pin = request.form['pin']
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
-    cursor.execute('SELECT * FROM users WHERE username = ? AND password = ?', (username, password))
+    cursor.execute('SELECT * FROM users WHERE username = ? AND password = ? AND pin = ?', (username, password, pin))
     user = cursor.fetchone()
     conn.close()
 
     if user:
         session['user'] = user[1]
         print(user)
-        session['age'] = user[3]
         return redirect(url_for('account'))
     return redirect(url_for('login_fail'))
 
@@ -66,16 +66,19 @@ def welcome():
 def account():
     if 'user' in session:
         user = session['user']
-        age = session['age']
-        return render_template('account.html', user=user, age=age)
+        return render_template('account.html', user=user)
     return redirect(url_for('login'))
 
+@app.route('/settings')
+def settings():
+    return render_template('settings.html')
+
+#   @app.route('/geminiai')
 
 #   Log out Route
 @app.route('/logout')
 def logout():
     session.pop('user', None)
-    session.pop('age', None)
     return redirect(url_for('login'))
 
 
