@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="475d7e41-6345-4c94-b699-c611f225f90f" name="Changes" comment="10CS-2024-AH&#10;1/10/24">
+    <list default="true" id="475d7e41-6345-4c94-b699-c611f225f90f" name="Changes" comment="10CS-2024-AH&#10;2/10/24">
+      <change afterPath="$PROJECT_DIR$/Other/main_ozone.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Other/science_ozone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assess_flask/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assess_flask/templates/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assess_flask/ai_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/ai_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/ai.html" beforeDir="false" afterPath="$PROJECT_DIR$/Other/main_ozone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assess_flask/templates/ai.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/ai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assess_flask/templates/geminiai.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/FullAI.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assess_flask/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assess_flask/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_flask/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic_flask/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,32 +72,33 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/alexh/PycharmProjects/10CS-2024-AH/assess_flask/static",
+    "last_opened_file_path": "C:/Users/alexh/PycharmProjects/10CS-2024-AH/basic_flask/templates",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH\basic_flask\templates" />
       <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH\assess_flask\static" />
       <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH\assess_flask\templates" />
       <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH\assess_flask" />
       <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH\basic_flask" />
-      <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH\assess_flask\templates" />
       <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH\basic_flask\static" />
       <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH\basic_flask\templates" />
       <recent name="C:\Users\alexh\PycharmProjects\10CS-2024-AH" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ai_app (1)">
+  <component name="RunManager" selected="Python.ai_app">
     <configuration name="welcome.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/10CS-2024-AH/basic_flask/templates/welcome.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -124,29 +126,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ai_app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="10CS-2024-AH" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assess_flask" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assess_flask/ai_app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ai_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="10CS-2024-AH" />
       <option name="ENV_FILES" value="" />
@@ -162,6 +141,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/basic_flask/ai_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ai_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="10CS-2024-AH" />
+      <option name="ENV_FILES" value="$PROJECT_DIR$/assess_flask/.env" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assess_flask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assess_flask/ai_app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -219,14 +221,13 @@
     <list>
       <item itemvalue="JavaScript Debug.welcome.html" />
       <item itemvalue="Python.age_calculatorAH" />
-      <item itemvalue="Python.ai_app (1)" />
       <item itemvalue="Python.ai_app" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.list_learning" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ai_app (1)" />
+        <item itemvalue="Python.ai_app" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.ai_app" />
         <item itemvalue="JavaScript Debug.welcome.html" />
@@ -290,7 +291,8 @@
       <workItem from="1727744706161" duration="5979000" />
       <workItem from="1727758019486" duration="239000" />
       <workItem from="1727825572130" duration="100000" />
-      <workItem from="1727838802680" duration="3791000" />
+      <workItem from="1727838802680" duration="3926000" />
+      <workItem from="1728001080608" duration="6821000" />
     </task>
     <task id="LOCAL-00001" summary="10CS-2024-AH">
       <option name="closed" value="true" />
@@ -332,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727750692059</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="10CS-2024-AH&#10;2/10/24">
+      <option name="closed" value="true" />
+      <created>1727842858649</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727842858649</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +362,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="10CS-2024-AH" />
     <MESSAGE value="10CS-2024-AH&#10;1/10/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="10CS-2024-AH&#10;1/10/24" />
+    <MESSAGE value="10CS-2024-AH&#10;2/10/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="10CS-2024-AH&#10;2/10/24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -387,6 +398,6 @@
     <SUITE FILE_PATH="coverage/10CS_2024_AH$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1720493165164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/intro_course" />
     <SUITE FILE_PATH="coverage/10CS_2024_AH$age_calculatorAH.coverage" NAME="age_calculatorAH Coverage Results" MODIFIED="1721089981515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/10CS_2024_AH$list_learning.coverage" NAME="list_learning Coverage Results" MODIFIED="1721356668012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/10CS_2024_AH$ai_app__1_.coverage" NAME="ai_app (1) Coverage Results" MODIFIED="1727842197723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assess_flask" />
+    <SUITE FILE_PATH="coverage/10CS_2024_AH$ai_app__1_.coverage" NAME="ai_app Coverage Results" MODIFIED="1728018774096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assess_flask" />
   </component>
 </project>

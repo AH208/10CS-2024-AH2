@@ -1,9 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
+import google.generativeai as genai
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'FrameworkRyzen7040'
+app.config['SECRET_KEY'] = 'Framework'
+
+genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 #   Create a connection to the SQLite3 database
 def get_db_connection():
@@ -16,16 +21,19 @@ def get_db_connection():
 def home():
     return render_template('register.html')
 
-
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/register')
 def register():
+    return render_template('register.html')
+
+@app.route('/register', methods=['POST'])
+def register_post():
     username = request.form['username']
     password = request.form['password']
-    pin = request.form['pin']
+    password = generate_password_hash(password)
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
     # inserts the user details in the users table
-    cursor.execute('INSERT INTO users (username, password, pin) VALUES (?, ?, ?)', (username, password, pin))
+    cursor.execute('INSERT INTO users (username, password) VALUES (?, ?)', (username, password))
     conn.commit()  # commits the changes to the database
     conn.close()  # closes the connection to the database
     flash('User registered successfully!', 'success!')
@@ -37,30 +45,32 @@ def login():
     return render_template('login.html')
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST'])
 def login_post():
     username = request.form['username']
     password = request.form['password']
-    pin = request.form['pin']
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
-    cursor.execute('SELECT * FROM users WHERE username = ? AND password = ? AND pin = ?', (username, password, pin))
+    cursor.execute('SELECT * FROM users WHERE username = ?', (username,))
     user = cursor.fetchone()
     conn.close()
 
-    if user:
+    if user and check_password_hash(user[2], password):
         session['user'] = user[1]
         print(user)
         return redirect(url_for('account'))
     return redirect(url_for('login_fail'))
 
+
 @app.route('/login_fail')
 def login_fail():
     return render_template('login_fail.html')
 
+
 @app.route('/welcome')
 def welcome():
     return render_template('welcome.html')
+
 
 @app.route('/account')
 def account():
@@ -69,11 +79,32 @@ def account():
         return render_template('account.html', user=user)
     return redirect(url_for('login'))
 
+
 @app.route('/settings')
 def settings():
     return render_template('settings.html')
 
-#   @app.route('/geminiai')
+
+@app.route('/geminiai', methods=['GET', 'POST'])
+def gemini():
+    if "user" not in session:
+        return redirect(url_for('login'))
+
+    prompt = ""
+    output = ""
+    if request.method == 'POST':
+        prompt = request.form['input']
+        output = model.generate_content(prompt).text
+
+        conn = sqlite3.connect('database.db')
+        cursor = conn.cursor()
+        # inserts the user details in the users table
+        cursor.execute('INSERT INTO history (user_id, prompt, response) VALUES (?, ?, ?)', (session['user'], prompt, output))
+        conn.commit()  # commits the changes to the database
+        conn.close()  # closes the connection to the database
+
+    return render_template('ai.html', input=prompt, output=output)
+
 
 #   Log out Route
 @app.route('/logout')
