@@ -3,11 +3,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
 import google.generativeai as genai
 import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Framework'
 
-genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
+load_dotenv()
+genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 #   Create a connection to the SQLite3 database
@@ -16,7 +18,7 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
-
+#   / = register
 @app.route('/')
 def home():
     return render_template('register.html')
@@ -30,6 +32,7 @@ def register_post():
     username = request.form['username']
     password = request.form['password']
     password = generate_password_hash(password)
+    #   werkzueg password protection thing - Gives the users password a hashed password in database
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
     # inserts the user details in the users table
@@ -54,7 +57,7 @@ def login_post():
     cursor.execute('SELECT * FROM users WHERE username = ?', (username,))
     user = cursor.fetchone()
     conn.close()
-
+#   werkzueg password protection thing - Checks if the users hashed password in database matches with input
     if user and check_password_hash(user[2], password):
         session['user'] = user[1]
         print(user)
@@ -79,34 +82,34 @@ def account():
         return render_template('account.html', user=user)
     return redirect(url_for('login'))
 
-
+#   TODO: settings might include image database - DO LAST
 @app.route('/settings')
 def settings():
     return render_template('settings.html')
 
-
+#   Google Gemini AI is a cloud service not running on device
 @app.route('/geminiai', methods=['GET', 'POST'])
 def gemini():
     if "user" not in session:
         return redirect(url_for('login'))
-
+    #   If user not logged in, redirect to log in
     prompt = ""
     output = ""
     if request.method == 'POST':
         prompt = request.form['input']
         output = model.generate_content(prompt).text
-
+        #   connect database for recording input history
         conn = sqlite3.connect('database.db')
         cursor = conn.cursor()
-        # inserts the user details in the users table
+        #   inserts the user details in the users table
         cursor.execute('INSERT INTO history (user_id, prompt, response) VALUES (?, ?, ?)', (session['user'], prompt, output))
-        conn.commit()  # commits the changes to the database
-        conn.close()  # closes the connection to the database
+        conn.commit()  # commits changes to the database
+        conn.close()  # closes database connection
 
     return render_template('ai.html', input=prompt, output=output)
 
 
-#   Log out Route
+#   Log out route for button
 @app.route('/logout')
 def logout():
     session.pop('user', None)
