@@ -12,14 +12,14 @@ while True:
         'stream': False,
         'messages': messages
     }
-
     response = requests.post(api_endpoint, json=data)
 
     if response.status_code == 200:
         response_data = response.json()
-
         assistant_response = response_data['message']['content']
-        messages.append({'role': 'chatbot', 'content': assistant_reply})
+
+        messages.append(response_data['message'])
+
 
         print(f'Assistant: {assistant_response}')
     else:

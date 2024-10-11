@@ -18,6 +18,7 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
+#   Register
 #   / = register
 @app.route('/')
 def home():
@@ -42,6 +43,7 @@ def register_post():
     flash('User registered successfully!', 'success!')
     return redirect(url_for('login'))
 
+#   Login
 
 @app.route('/login')
 def login():
@@ -69,6 +71,7 @@ def login_post():
 def login_fail():
     return render_template('login_fail.html')
 
+#   after login html pages
 
 @app.route('/welcome')
 def welcome():
@@ -87,6 +90,7 @@ def account():
 def settings():
     return render_template('settings.html')
 
+#   Artificial Intelligence
 #   Google Gemini AI is a cloud service not running on device
 @app.route('/geminiai', methods=['GET', 'POST'])
 def gemini():
@@ -119,3 +123,10 @@ def logout():
 if __name__ == '__main__':
     get_db_connection()
     app.run(port=5000, debug=True)
+
+#           Register
+#   Login  -|
+#           Account
+#               \
+#                AI page AND Settings
+
