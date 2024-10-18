@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="475d7e41-6345-4c94-b699-c611f225f90f" name="Changes" comment="10CS-2024-AH&#10;11/10/24">
-      <change afterPath="$PROJECT_DIR$/Other/main_ozone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Other/science_ozone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assess_flask/templates/home_page.html" afterDir="false" />
+    <list default="true" id="475d7e41-6345-4c94-b699-c611f225f90f" name="Changes" comment="10CS-2024-AH&#10;18/10/24&#10;Should be final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai_tutorial/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai_tutorial/chatbot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assess_flask/ai_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/ai_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/ai.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/ai_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/ollama.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/settings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assess_flask/templates/simple_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/assess_flask/templates/simple_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,7 +346,7 @@
       <workItem from="1729206686996" duration="51000" />
       <workItem from="1729207040898" duration="342000" />
       <workItem from="1729209496686" duration="349000" />
-      <workItem from="1729213610157" duration="1813000" />
+      <workItem from="1729213610157" duration="2699000" />
     </task>
     <task id="LOCAL-00001" summary="10CS-2024-AH">
       <option name="closed" value="true" />
@@ -433,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728614679545</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="10CS-2024-AH&#10;18/10/24&#10;Should be final">
+      <option name="closed" value="true" />
+      <created>1729215685979</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729215685979</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +452,8 @@
     <MESSAGE value="10CS-2024-AH&#10;4/10/24&#10;- Added Gemini AI" />
     <MESSAGE value="10CS-2024-AH&#10;8/10/24" />
     <MESSAGE value="10CS-2024-AH&#10;11/10/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="10CS-2024-AH&#10;11/10/24" />
+    <MESSAGE value="10CS-2024-AH&#10;18/10/24&#10;Should be final" />
+    <option name="LAST_COMMIT_MESSAGE" value="10CS-2024-AH&#10;18/10/24&#10;Should be final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

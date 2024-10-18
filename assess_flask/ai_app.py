@@ -5,10 +5,14 @@ import google.generativeai as genai
 import os
 import requests
 from dotenv import load_dotenv
-#   Importation of needed
+#   Importation of needed libraries for flask, werkzeug, sqlite, gemini, os, requests, and the .env
+#   style.css has preferred browser colour (Light/Dark mode)
+#   And it also has resize of text area to vertical for the AI page
+
 #   For the flask application
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Framework'
+#   Secret key
 
 api_endpoint = 'http://localhost:11434/api/chat'
 #   api_endpoint is a http due to https bringing an SSL issue
