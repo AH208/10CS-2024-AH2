@@ -2,19 +2,26 @@
 {% block title %}Index{% endblock %}
 {% block head %}
 {% endblock %}
-
+<! -- account html is not connected to the website because it is not necessary -->
 {% block content %}
 
     <h1>Hello {{ user }}! Welcome to your very own AI App Account!</h1>
 
+<div class="w3-container w3-deep-purple w3-round-xxlarge">
+    <img class="w3-circle" src="../static/f1.png" alt=user style="width:80%;max-width:150px">
+    <p>Good day {{ user }}! Here are your details: </p>
+</div>
 
 <div class="w3-dropdown-hover w3-display-right">
     <button class="w3-button">Page Selection</button>
     <div class="w3-dropdown-content w3-bar-block w3-border-gray w3-deep-purple">
-        <a href="/geminiai" class="w3-bar-item w3-button">Gemini AI</a>
+        <a href="/homepage" class="w3-bar-item w3-button">Homepage</a>
+        <a href="/ai_page" class="w3-bar-item w3-button">AI Page</a>
         <a href="/settings" class="w3-bar-item w3-button">Settings</a>
     </div>
 </div>
+
+
 
 
 

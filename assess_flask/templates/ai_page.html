@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+
+<div class="w3-container w3-round-xxlarge w3-leftbar w3-rightbar w3-topbar w3-bottombar w3-border-deep-purple w3-dark-grey w3-display-middle w3-threequarter">
+    <div class="w3-center w3-padding-16">
+        <form method="post">
+              <label for="model">Choose an AI LLM:</label>
+              <select name="model" id="model">
+                <option value="llama2" {{ 'selected' if model == 'llama2' }}>Llama 2</option>
+                <option value="llama3" {{ 'selected' if model == 'llama3' }}>Llama 3</option>
+                <option value="mistral" {{ 'selected' if model == 'mistral' }}>Mistral</option>
+              </select>
+            {% for text in output %}
+            <textarea name="output" readonly class="w3-green w3-block" rows="1">{{text[2]}}</textarea>
+            <textarea name="output" readonly class="w3-blue w3-block">{{text[3]}}</textarea>
+            {% endfor %}
+            <! -- Input from the user goes here -->
+            <textarea name="input" class="w3-block"></textarea>
+            <input class="w3-button w3-white w3-border w3-border-red w3-hover-border-green w3-round-large w3-margin-top" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div class="w3-dropdown-hover">
+    <button class="w3-button">Previous Chats</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border-gray w3-deep-purple">
+        {% for chat in chats %}
+        {# This for loop creates a new dropdown item for each chat #}
+        <a href="/ai_page/{{chat[1][0]}}" class="w3-bar-item w3-button">Chat {{chat[0]}}</a>
+        {% endfor %}
+    </div>
+</div>
+<a href="/ai_page" class="w3-button">New Chat</a>
+{% endblock %}

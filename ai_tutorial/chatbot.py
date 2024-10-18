@@ -1,8 +1,8 @@
 import requests
 
-api_endpoint = 'https://localhost:11434/api/chat'
-
-message = []
+api_endpoint = 'http://localhost:11434/api/chat'
+#   api_endpoint is a http due to https bringing an SSL issue
+messages = []
 
 while True:
     user_input = input('You: ')

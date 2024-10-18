@@ -4,3 +4,6 @@
         color: white;
     }
 }
+textarea {
+    resize: vertical;
+}

@@ -5,9 +5,31 @@
 
 {% block content %}
 <html>
-    <h1>Welcome to the AI App</h1>
-    <p>Enable pin for extra security</p>
+    <h1>AI App Settings</h1>
+    <h2>Change Logs</h2>
 </html>
+
+<div class="w3-container w3-deep-purple w3-round-xxlarge">
+    <h3>Change log</h3>
+    <p>In here will be the change notes starting from the 18/10.</p>
+</div>
+
+{# KNOWN ISSUES WITH THE WEBSITE #}
+{# Gemini history is not shown to the user due to differences in history systems involving context #}
+{# As a result gemini shows up as null in the database #}
+
+
+<div class="w3-container w3-dark-grey w3-round-xxlarge">
+    <p>Sorry {{ user }}, but currently there are no available settings to change!</p>
+</div>
+
+<div class="w3-dropdown-hover w3-display-right">
+    <button class="w3-button">Page Selection</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border-gray w3-deep-purple">
+        <a href="/homepage" class="w3-bar-item w3-button">Homepage</a>
+        <a href="/ai_page" class="w3-bar-item w3-button">AI page</a>
+    </div>
+</div>
 
 
 {% endblock %}
